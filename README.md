@@ -1,5 +1,5 @@
 # Java_Spring-Boot
-![Spring Boot.](https://huongdanjava.com/wp-content/uploads/2018/03/spring-boot-1.png)
+![Spring Boot.](https://miro.medium.com/v2/resize:fit:1400/1*aXe6MaOyhdIP5WqdPHhSFw.png)
 
 ## Setup Enviroment
 * [IntelliJ IDEA](https://www.jetbrains.com/idea/download/?section=windows)
