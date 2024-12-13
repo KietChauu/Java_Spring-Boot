@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head><title>Form Sinh Viên</title></head>
+<body>
+    <section layout:fragment="content"><h1>Form Sinh Viên</h1>
+        <form th:action="@{/sinhvien}" th:object="${sinhVien}" method="post" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="name" class="form-label">Tên</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" th:field="*{ten}">
+                <p th:if="${#fields.hasErrors('ten')}" th:errors="*{ten}" style="color: red;"></p>
+            </div>
+
+            <div class="mb-3">
+                <label for="age" class="form-label">Tuổi</label>
+                <input type="text" class="form-control" id="age" placeholder="Enter your age" th:field="*{tuoi}">
+                <p th:if="${#fields.hasErrors('tuoi')}" th:errors="*{tuoi}" style="color: red;"></p>
+            </div>
+
+            <div class="mb-3">
+                <label for="faculty" class="form-label">Khoa</label>
+                <input type="text" class="form-control" id="faculty" placeholder="Enter your faculty" th:field="*{khoa}">
+                <p th:if="${#fields.hasErrors('khoa')}" th:errors="*{khoa}" style="color: red;"></p>
+            </div>
+
+            <p>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </p>
+
+        </form>
+    </section>
+</body>
+</html>
